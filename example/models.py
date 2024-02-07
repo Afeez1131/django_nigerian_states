@@ -5,3 +5,4 @@ class About(models.Model):
     name = models.CharField(max_length=55)
     state = models.CharField(max_length=55)
     lga = models.CharField(max_length=55)
+    zone = models.CharField(max_length=55)
