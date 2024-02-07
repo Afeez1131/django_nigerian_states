@@ -7,8 +7,8 @@ Nigerian State is a Django 3rd Party Application designed to handle Nigerian geo
 - [Installation](#installation)
 - [Usage](#usage)
 - [Configuration](#configuration)
-- [Template Tags](#template_tags)
-- [Running Test](#running_tests)
+- [Template Tags](#template-tags)
+- [Running Test](#running-tests)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
@@ -98,6 +98,7 @@ zone = GeoPoliticalZoneField(
     zones=[PoliticalZones.SOUTH_EAST, PoliticalZones.SOUTH_EAST], # limits the field to specified political zones, overriding DEFAULT_GEO_POLITICAL_ZONES
 )
 ```
+Note: In the above, by passing the `zones` kwargs in the field, It would override the `DEFAULT_GEO_POLITICAL_ZONES` set in the `settings.py`
 ## Template Tags
 To use the template tags, you need put `{% load default_tags %}` at the top of your django template.
 The following template tags are available for use in your Django templates:
@@ -145,9 +146,9 @@ Contributions are welcomed and appreciated! Follow these steps to contribute:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
-## Developed by Afeez Lawal
+## Developed by [Afeez Lawal](https://www.linkedin.com/in/lawal-afeez/)
 
 ## Contact Me:
-- [Email:](mailto:lawalafeez052@gmail)
-- [LinkedIn:](https://www.linkedin.com/in/lawal-afeez/)
-- [Github:](https://github.com/Afeez1131/)
+- Email: [Mail](mailto:lawalafeez052@gmail)
+- Lawal Afeez: [LinkedIn:](https://www.linkedin.com/in/lawal-afeez/)
+- Github: [Github:](https://github.com/Afeez1131/)

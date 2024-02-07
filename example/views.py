@@ -12,7 +12,7 @@ def home(request):
             print(form.cleaned_data)
             about = form.save()
             return HttpResponse(
-                f"About succesfully updated. \n {about.name} | {about.state} | {about.lga}"
+                f"About succesfully created. \n {about.name} | {about.state} | {about.lga}"
             )
     return render(request, "example/home.html", {"form": form})
 

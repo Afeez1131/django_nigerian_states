@@ -9,7 +9,7 @@ from nigerian_states.fields import (
 )
 
 
-class AboutForm(forms.Form):
+class AboutForm(forms.ModelForm):
     name = forms.CharField(max_length=55, required=True)
     zone = GeoPoliticalZoneField(
         label="Zone",
@@ -32,6 +32,7 @@ class AboutForm(forms.Form):
             attrs={"class": "select form-select select2", "required": "required"}
         ),
     )
-
-    def save(self, commit=True):
-        return About.objects.create(**self.cleaned_data)
+    
+    class Meta:
+        model = About
+        fields = ['name', 'state', 'lga', 'zone']
